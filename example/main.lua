@@ -1,4 +1,4 @@
-local Board = require 'board'
+local Board = require 'src/board'
 
 local image_config = {
   width = 20,
@@ -7,11 +7,11 @@ local image_config = {
   count_y = 30
 }
 
-local board = Board(image_config, 10)
+local board = Board(image_config, 20)
 local x = 1
 local y = 1
 board.run(function()
-  board.display_image(x, y, '../images/x.png')
+  board.display_image(x, y, './example/images/x.png')
   x = x + 1
   if x > image_config.count_x then
     x = 1

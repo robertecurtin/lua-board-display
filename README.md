@@ -4,7 +4,7 @@ Displays a blank board, then periodically calls the provided function at a given
 
 That function can then update the image at a given coordinate.
 
-Run [main.lua](./main.lua) to see an example. It fills up the screen with Xs.
+Run [main.lua](./main.lua) using `lua example/main.lua` to see an example. It fills up the screen with Xs.
 
 ## Weird things
 When you run the application, you need to click on the screen to close it.
