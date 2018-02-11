@@ -4,14 +4,14 @@ local Gio = lgi.require('Gio', '2.0')
 
 local function generate_default_images(image_config, stage)
   local images = {}
-  for i = 0, image_config.count_x - 1 do
-    for j = 0, image_config.count_y - 1 do
+  for i = 1, image_config.count_x do
+    for j = 1, image_config.count_y do
       local image = Clutter.Texture {
         filename = '../images/o.png',
         width =   image_config.width,
         height =  image_config.height,
-        fixed_x = image_config.width * i,
-        fixed_y = image_config.height * j,
+        fixed_x = image_config.width * (i - 1),
+        fixed_y = image_config.height * (j - 1),
         anchor_x = 0,
         anchor_y = 0
       }
