@@ -1,6 +1,6 @@
-## lua-board-display
+## lua-display-grid
 
-Displays a blank board, then periodically calls the provided function at a given rate.
+Displays a blank 800x600 screen, then periodically calls the provided function at a given rate.
 
 That function can then update the image at a given coordinate.
 
