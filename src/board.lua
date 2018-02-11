@@ -7,7 +7,7 @@ local function generate_default_images(image_config, stage)
   for i = 1, image_config.count_x do
     for j = 1, image_config.count_y do
       local image = Clutter.Texture {
-        filename = '../images/o.png',
+        filename = nil,
         width =   image_config.width,
         height =  image_config.height,
         fixed_x = image_config.width * (i - 1),
@@ -55,7 +55,7 @@ return function(image_config, duration_in_msec)
   local function display_image(x, y, image_filename)
     local image = images[x .. ',' .. y]
     if image then
-      image:set_from_file('../images/x.png')
+      image:set_from_file(image_filename)
       image:queue_redraw()
     end
   end
