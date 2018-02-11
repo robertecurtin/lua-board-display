@@ -13,4 +13,5 @@ I can't figure out how to get the display to be anything other than 800x600 on m
 
 ## Dependencies
 `sudo apt install libgirepository1.0-dev`
+
 `luarocks install lgi`
