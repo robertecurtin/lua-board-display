@@ -38,8 +38,8 @@ return function(image_config, min_duration_in_msec)
   end
 
   local function run(callback)
-    function timeline:on_new_frame(frame_num)
-        callback()
+    function timeline:on_completed()
+      callback()
     end
 
     generate_default_images(image_config, stage)
